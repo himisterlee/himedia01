@@ -21,7 +21,12 @@ public class MemberRepository extends Exception{
 
     }
 
-    //public void printData()
+    public void printData() {
+
+        for(Member m : memberList) {
+            System.out.println(m.getGrade() + " 등급 회원 " + m.getName() + "의 포인트는 " + m.getPoint() + "이고, 이자 포인트는 " + m.calculateInterest() + "입니다.");
+        }
+    }
 
 
 }
