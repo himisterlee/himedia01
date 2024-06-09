@@ -21,5 +21,7 @@ public class MemberRepository extends Exception{
 
     }
 
+    //public void printData()
+
 
 }

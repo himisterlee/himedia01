@@ -12,37 +12,57 @@ public class Run {
         try {
             memberRepository.insertMember(new Silver("홍길동", "Silver", 1000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Silver("고길동", "Silver", 2000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Silver("홍동민", "Silver", 3000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Gold("김회장", "Gold", 1000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Gold("이회장", "Gold", 2000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Gold("오회장", "Gold", 3000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try {
             memberRepository.insertMember(new Vip("이순신", "Vip", 10000));
         } catch (OverMemberException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+        try {
+            memberRepository.insertMember(new Vip("김철수", "Vip", 10000));
+        } catch (OverMemberException e) {
+            e.printStackTrace();
+        }
+        try {
+            memberRepository.insertMember(new Vip("이철수", "Vip", 20000));
+        } catch (OverMemberException e) {
+            e.printStackTrace();
+        }
+        try {
+            memberRepository.insertMember(new Vip("박철수", "Vip", 30000));
+        } catch (OverMemberException e) {
+            e.printStackTrace();
+        }
+        try {
+            memberRepository.insertMember(new Vip("최철수", "Vip", 40000));
+        } catch (OverMemberException e) {
+            e.printStackTrace();
         }
 
 
