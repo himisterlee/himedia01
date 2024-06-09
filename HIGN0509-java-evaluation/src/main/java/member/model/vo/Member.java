@@ -37,4 +37,5 @@ abstract public class Member {
 
     abstract public double calculateInterest();
 
+
 }
