@@ -13,6 +13,7 @@ public class MemberRepository {
 
     public void insertMember(Member m) {
 
+
     }
 
 
