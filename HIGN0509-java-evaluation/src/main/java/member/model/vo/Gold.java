@@ -1,6 +1,6 @@
 package member.model.vo;
 
-public class Gold extends Member{
+public class Gold extends Member implements Buyable {
 
     public Gold(String name, String grade, int point) {
         super(name, grade, point);
@@ -10,5 +10,13 @@ public class Gold extends Member{
     public double calculateInterest() {
         double interestRate = getPoint() * 0.05;
         return interestRate;
+    }
+
+
+    @Override
+    public int buy(int price) {
+        double disconuntRate = price * 0.05;
+        int buyPrice = (int) disconuntRate;
+        return buyPrice;
     }
 }
